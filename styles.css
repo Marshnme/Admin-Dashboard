@@ -43,21 +43,25 @@ header{
     display:grid;
     grid-template-rows: 1fr;
     grid-template-columns: 1.5fr 1fr;
-    column-gap: 20px;
     align-items: center;
+    
 }
 
 .header-buttons{
-    justify-self: center;
+    display: grid;
+    /* grid-template-columns: repeat(3,1fr); */
+    grid-template-columns: minmax(110px, 200px) minmax(110px, 200px) minmax(110px, 200px);
+    
 }
 
 .header-buttons button{
-    padding:.5rem 2rem;
+    padding:.5rem 0rem;
     border-radius: 15px;
     border: none;
     color:white;
     background:rgb(92, 194, 228);
-    margin-right:15px;
+    margin:0 10px;
+    
 }
 
 aside{
