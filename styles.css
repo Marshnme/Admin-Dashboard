@@ -48,7 +48,8 @@ main{
     display:grid;
     gap:15px;
     grid-template-columns: repeat(2,1fr);
-    grid-template-rows: .1fr 2fr;
+    grid-template-rows: 20px 2fr;
+    align-items:start;
 }
 
 h4{
@@ -60,14 +61,19 @@ h4{
 
     display:grid;
     gap:15px;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+}
 
+.projects div{
+    height:200px;
 }
 
 .announcements{
     grid-area: announce;
+    position:relative
 }
 
 .trending{
     grid-area: trending;
+    position:relative
 }
