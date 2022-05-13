@@ -67,6 +67,8 @@ aside{
     grid-template-columns: 1fr;
     grid-template-rows: 50px 1fr;
     
+    background:rgb(90, 180, 253);
+    color:white;
     
 }
 
@@ -93,13 +95,15 @@ main{
         "projects  trending"
         "projects  trending"
     ;
+    
+    background:rgb(209, 226, 236);
 }
 
 .projects-contain{
     grid-area: projects; 
     
     display:grid;
-    gap:15px;
+    gap:10px;
     grid-template-columns: repeat(2,1fr);
     grid-template-rows: 20px 2fr;
     align-items:start;
@@ -115,10 +119,18 @@ h4{
     display:grid;
     gap:15px;
     grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+
+    
 }
 
 .projects div{
     height:200px;
+    padding:15px;
+    
+    background:white;
+    border-radius: 8px;
+    border-left: 6px solid;
+    border-left-color: orange;
 }
 
 .announcement-contain{
@@ -126,7 +138,17 @@ h4{
     display:grid;
     grid-template-rows: 20px 1fr;
     grid-template-columns: 1fr;
-    row-gap: 15px;
+    row-gap: 10px;
+
+    
+    
+}
+
+.announcement-contain .announcements{
+    padding:20px;
+    border-radius: 8px;
+
+    background:white;
 }
 
 .trending-contain{
@@ -134,5 +156,12 @@ h4{
     display:grid;
     grid-template-rows: 20px 1fr;
     grid-template-columns: 1fr;
-    row-gap: 15px;
+    row-gap: 10px;
+}
+
+.trending-contain .trending{
+    padding:20px;
+    border-radius: 8px;
+
+    background:white;
 }
