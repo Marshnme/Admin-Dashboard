@@ -68,12 +68,18 @@ h4{
     height:200px;
 }
 
-.announcements{
+.announcement-contain{
     grid-area: announce;
-    position:relative
+    display:grid;
+    grid-template-rows: 20px 1fr;
+    grid-template-columns: 1fr;
+    row-gap: 15px;
 }
 
-.trending{
+.trending-contain{
     grid-area: trending;
-    position:relative
+    display:grid;
+    grid-template-rows: 20px 1fr;
+    grid-template-columns: 1fr;
+    row-gap: 15px;
 }
