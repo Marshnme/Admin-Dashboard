@@ -1,3 +1,32 @@
-p{
-    color:green;
+*{
+    border:1px solid black;
+}
+
+html,body,h1,h2,h3,h4,p{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.container{
+    height:100vh;
+    display:grid;
+    grid-template-columns:1fr 5fr ;
+    grid-template-rows: 1fr 5fr ;
+    grid-template-areas:
+        "side header "
+        "side main"
+    ;
+}
+
+header{
+    grid-area: header;
+}
+
+aside{
+    grid-area: side;
+}
+
+main{
+    grid-area: main;
 }
