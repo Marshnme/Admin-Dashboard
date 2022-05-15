@@ -50,8 +50,8 @@ header{
 .header-buttons{
     display: grid;
     /* grid-template-columns: repeat(3,1fr); */
-    grid-template-columns: minmax(110px, 200px) minmax(110px, 200px) minmax(110px, 200px);
-    
+    grid-template-columns: minmax(110px, 150px) minmax(110px, 150px) minmax(110px, 150px);
+    column-gap:15px ;
 }
 
 .header-buttons button{
