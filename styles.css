@@ -96,6 +96,19 @@ aside{
     
 }
 
+aside .aside-title{
+    font-size: 1.5rem;
+    display:grid;
+    grid-template-columns:4.5rem 90px;
+    grid-template-rows: 1fr;
+    align-self: center;
+
+}
+
+.aside-title a{
+    align-self: center;
+}
+
 aside h3{
     align-self: center;
     justify-self: center;
@@ -107,6 +120,22 @@ aside ol{
     display:grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(9,5%);
+    padding-left: 3%;
+    
+}
+
+aside ol li{
+    display:grid;
+    grid-template-columns:3rem 30px;
+    grid-template-rows: 1fr;
+    align-self: center;
+    
+}
+
+aside a{
+    text-decoration: none;
+    color:white;
+    align-self: center;
 }
 
 main{
