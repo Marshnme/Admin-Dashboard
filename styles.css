@@ -43,6 +43,12 @@ header{
 }
 
 
+.search form{
+    display: grid;
+    column-gap: 20px;
+    grid-template-columns: 20px 1fr;
+    align-items:center;
+}
 .search input {
     width:80%;
     padding:8px 10px;
@@ -56,6 +62,8 @@ header{
 
 .search .notification{
     justify-self: center;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
 .info-upload{
@@ -89,7 +97,7 @@ aside{
     padding: 20px;
     display:grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 50px 1fr;
+    grid-template-rows: 50px 70rem;
     
     background:rgb(90, 180, 253);
     color:white;
@@ -112,6 +120,7 @@ aside .aside-title{
 aside h3{
     align-self: center;
     justify-self: center;
+    padding-right:10px;
 }
 
 aside ol{
