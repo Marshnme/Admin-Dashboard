@@ -97,7 +97,7 @@ aside{
     padding: 20px;
     display:grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 50px 70rem;
+    grid-template-rows: 50px 50rem;
     
     background:rgb(90, 180, 253);
     color:white;
@@ -130,7 +130,7 @@ aside ol{
     grid-template-columns: 1fr;
     grid-template-rows: repeat(9,5%);
     padding-left: 3%;
-    
+    row-gap: 20px;
 }
 
 aside ol li{
@@ -244,4 +244,10 @@ h4{
 
 header, .announcements , .trending, .projects div{
     box-shadow:2px 3px 5px rgb(179, 179, 179);
+}
+
+/* left aside margin for lowered lis */
+
+.move-down{
+    margin-top: 100px;
 }
