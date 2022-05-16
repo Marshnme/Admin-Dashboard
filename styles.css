@@ -22,11 +22,10 @@ html,body,h1,h2,h3,h4,p{
 header{
     grid-area: header;
 
+    position: relative;
     display:grid;
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr;
-
-    /* border:1px solid black */
 }
 
 .search{
@@ -168,4 +167,10 @@ h4{
     border-radius: 8px;
 
     background:white;
+}
+
+/* shadows */
+
+header, .announcements , .trending, .projects div{
+    box-shadow:2px 3px 5px rgb(179, 179, 179);
 }
