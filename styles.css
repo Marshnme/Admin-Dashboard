@@ -104,6 +104,9 @@ aside h3{
 aside ol{
     padding:0;
     list-style-type:none;
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(9,5%);
 }
 
 main{
@@ -113,11 +116,11 @@ main{
     gap:30px;
     padding:30px;
     grid-template-columns:3fr 1fr ;
-    grid-template-rows: 1fr 1fr ;
+    grid-template-rows: 1fr 1fr 1fr ;
     grid-template-areas:
-        "projects  announce"
-        "projects  trending"
-        "projects  trending"
+        "projects  rightContain"
+        "projects  rightContain"
+        "projects     rightContain"
     ;
     
     background:rgb(209, 226, 236);
@@ -157,8 +160,16 @@ h4{
     border-left-color: orange;
 }
 
+
+.right-contain{
+    grid-area: rightContain;
+    display:grid;
+    row-gap: 40px;
+    grid-template-rows: 1fr 1fr;
+}
+
 .announcement-contain{
-    grid-area: announce;
+    /* grid-area: announce; */
     display:grid;
     grid-template-rows: 20px 1fr;
     grid-template-columns: 1fr;
@@ -176,11 +187,12 @@ h4{
 }
 
 .trending-contain{
-    grid-area: trending;
+    /* grid-area: trending; */
     display:grid;
     grid-template-rows: 20px 1fr;
     grid-template-columns: 1fr;
     row-gap: 10px;
+    margin-bottom:8%;
 }
 
 .trending-contain .trending{
