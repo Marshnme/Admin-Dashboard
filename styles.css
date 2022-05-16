@@ -28,13 +28,34 @@ header{
     grid-template-columns: 1fr;
 }
 
+.search ,.info-upload{
+    width:90%;
+    margin:0 auto;
+}
+
 .search{
-    padding:20px;
+    /* padding:20px; */
     display:grid;
     grid-template-rows: 1fr;
     grid-template-columns: 1.5fr 1fr;
     column-gap: 20px;
     align-items: center;
+}
+
+
+.search input {
+    width:80%;
+    padding:8px 10px;
+    border-radius: 15px;
+    border: none;
+    background-color: transparent;
+    resize: none;
+    outline: none;
+    background-color: rgb(229, 236, 238);
+}
+
+.search .notification{
+    justify-self: center;
 }
 
 .info-upload{
