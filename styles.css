@@ -196,6 +196,12 @@ h4{
     border-radius: 8px;
     border-left: 6px solid;
     border-left-color: orange;
+    display: flex;
+    flex-flow:column nowrap;
+    justify-content: space-between;
+}
+.projects > div .project-icons{
+    align-items: flex-end;
 }
 
 
