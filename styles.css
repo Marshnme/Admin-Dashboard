@@ -188,7 +188,7 @@ h4{
     
 }
 
-.projects div{
+.projects > div{
     height:200px;
     padding:15px;
     
@@ -242,7 +242,7 @@ h4{
 
 /* shadows */
 
-header, .announcements , .trending, .projects div{
+header, .announcements , .trending, .projects > div{
     box-shadow:2px 3px 5px rgb(179, 179, 179);
 }
 
