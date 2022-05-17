@@ -154,11 +154,11 @@ main{
     gap:30px;
     padding:30px;
     grid-template-columns:3fr 1fr ;
-    grid-template-rows: 1fr 1fr 1fr ;
+    grid-template-rows: 10rem 10rem 20rem ;
     grid-template-areas:
         "projects  rightContain"
         "projects  rightContain"
-        "projects     rightContain"
+        "projects  rightContain"
     ;
     
     background:rgb(209, 226, 236);
