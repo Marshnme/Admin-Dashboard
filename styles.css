@@ -256,13 +256,13 @@ h4{
 }
 
 .trending-contain .trending{
-    padding:20px;
+    padding:30px;
     border-radius: 8px;
 
     background:white;
     display: flex;
     flex-flow: column nowrap;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 
 /* shadows */
