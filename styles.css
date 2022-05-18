@@ -57,7 +57,7 @@ header{
     background-color: transparent;
     resize: none;
     outline: none;
-    background-color: rgb(229, 236, 238);
+    background-color: rgb(209, 226, 236);
 }
 
 .search .notification{
@@ -87,7 +87,7 @@ header{
     border-radius: 15px;
     border: none;
     color:white;
-    background:rgb(92, 194, 228);
+    background:rgb(76, 151, 212);
     margin:0 10px;
     
 }
@@ -99,7 +99,7 @@ aside{
     grid-template-columns: 1fr;
     grid-template-rows: 50px 50rem;
     
-    background:rgb(90, 180, 253);
+    background:rgb(76, 151, 212);
     color:white;
     
 }
@@ -154,7 +154,7 @@ main{
     gap:30px;
     padding:30px;
     grid-template-columns:3fr 20rem ;
-    grid-template-rows: 10rem 10rem 20rem ;
+    grid-template-rows: 10rem 10rem 24.5rem ;
     grid-template-areas:
         "projects  rightContain"
         "projects  rightContain"
@@ -191,7 +191,6 @@ h4{
 .projects > div{
     height:200px;
     padding:15px;
-    
     background:white;
     border-radius: 8px;
     border-left: 6px solid;
@@ -215,15 +214,21 @@ h4{
     grid-template-rows: 1fr 1fr;
 }
 
+
+
+.line-clamp {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical; 
+    overflow: hidden; 
+  }
+
 .announcement-contain{
     /* grid-area: announce; */
     display:grid;
     grid-template-rows: 20px 1fr;
     grid-template-columns: 1fr;
     row-gap: 10px;
-
-    
-    
 }
 
 .announcement-contain .announcements{
@@ -231,6 +236,14 @@ h4{
     border-radius: 8px;
 
     background:white;
+}
+
+.announcements > div{
+    margin-bottom:15px;
+}
+
+.underline{
+    border-bottom:1px solid black;
 }
 
 .trending-contain{
@@ -247,6 +260,9 @@ h4{
     border-radius: 8px;
 
     background:white;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
 }
 
 /* shadows */
